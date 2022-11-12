@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.BodyBox {
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    display: flex;
+
+}
+
+.SidebarDiv {
+    width: 0px;
+    height: 100%;
+    background-color: #4187f6;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    border-left: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-left: -5px;
+
+    border-right: 1px solid #ccc;
+}
+.MainContentsBox {
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEF;
+    transition: all 0.4s ease-in-out;
+}
+
+.MenuButton {
+    border-radius: 0px 100px 100px 0px;
+
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: -25px;
+    z-index: 9999;
+
+    transition: all 0.4s ease-in-out;
+    background-color: #2b343b;
+}
+
+.MenuButtonImg {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    margin-left: 10px;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0) invert(1);
+
+}
+
+.Menu_li {
+    width: 90%;
+    height: 50px;
+    transition: all 0.2s ease-in-out;
+    margin-left: 10%;
+    border-radius: 50px 0px 0px 50px !important;
+}
+
+.Menu_li a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    transition: all 0.2s ease;
+    display: none;
+    font-family: 'IBMPlexSansKR-Regular';
+    text-align: center;
+    
+    border-radius: 50px 0px 0px 50px !important;
+}
+
+.Menu_li:hover {
+    animation: Change-Color 0.3s ease;
+    color: white;
+    border-radius: 50px 0px 0px 50px !important;
+        background: rgb(65, 135, 246);
+}
+
+@keyframes Change-Color{
+    0%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 100%, rgba(65, 135, 246, 1) 100%);
+    }
+    
+    5%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 95%, rgba(65, 135, 246, 1) 95%);
+    }
+    
+    10%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 90%, rgba(65, 135, 246, 1) 90%);
+    }
+
+    
+    15%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 85%, rgba(65, 135, 246, 1) 85%);
+    }
+
+    20%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 80%, rgba(65, 135, 246, 1) 80%);
+    }
+    25%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 75%, rgba(65, 135, 246, 1) 75%);
+    }
+    30%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 70%, rgba(65, 135, 246, 1) 70%);
+    }
+    35%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 65%, rgba(65, 135, 246, 1) 65%);
+    }
+    40%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 60%, rgba(65, 135, 246, 1) 60%);
+    }
+    45%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 55%, rgba(65, 135, 246, 1) 55%);
+    }
+    50%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 50%, rgba(65, 135, 246, 1) 50%);
+    }
+    55%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 45%, rgba(65, 135, 246, 1) 45%);
+    }
+    60%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 40%, rgba(65, 135, 246, 1) 40%);
+    }
+    65%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 35%, rgba(65, 135, 246, 1) 35%);
+    }
+    70%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 30%, rgba(65, 135, 246, 1) 30%);
+    }
+    75%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 25%, rgba(65, 135, 246, 1) 25%);
+    }
+    80%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 20%, rgba(65, 135, 246, 1) 20%);
+    }
+    85%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 15%, rgba(65, 135, 246, 1) 15%);
+    }
+    90%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 10%, rgba(65, 135, 246, 1) 10%);
+    }
+    95%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 5%, rgba(65, 135, 246, 1) 5%);
+    }
+    100%{
+        background: rgb(65, 135, 246);
+        background: linear-gradient(90deg, rgba(43,52,59,1) 0%, rgba(65, 135, 246, 1) 0%);
+    }
+}
+
+.Menu_li:hover a {
+    color: white;
+}
+
+.active {
+    background-color: #4187f6;
+    color: white;
+    border-radius: 50px 0px 0px 50px !important;
+}
+
+.UlBox {
+    width: 93%;
+    background-color: #2b343b;
+    padding-top: 20px;
+    height: 100%;
+}
+
+
+.aTag {
+    color: white !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.ModalWindowBox {
+    width: 400px;
+    height: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 40px;
+}
+
+.HomeOtherPage {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: none;
+}
+
+.SlideTitleImg {
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: cover;
+
+}
+
+.ShowNum {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    color: white;
+    padding: 8px;
+    background-color: black;
+    opacity: 0.2;
+    display: none;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.nextButton {
+    background-color: #4187f6 !important;
+}
+
+.modal-content {
+    width: 800px !important;
+}
